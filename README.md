@@ -21,18 +21,17 @@ The automation reads the reference, searches a structured Excel table, and posts
 ## Example Response
 
 Reference: REF001  
-Status: Delayed  
+Status: Planned 
 Country: DE  
-LSP: LSP_A  
-Owner: Planner_A  
+Owner: User_1
+Gain: GREF00001
 
-## Technology Used
+## Tools Used
 
 - Microsoft Teams
 - Power Automate
-- Excel Online
+- Excel
 - SharePoint
-- Structured Excel table
 
 ## Flow Logic
 
@@ -51,15 +50,15 @@ No real shipment data, customer names, employee names, internal IDs, SharePoint 
 ## Current Limitations
 
 - Built as a Power Automate prototype.
-- Corporate bot permissions may restrict posting as Flow Bot.
-- Posting as user may be required depending on tenant policy.
+- Corporate bot permissions restrict posting as Flow Bot.
+- Posting as user is required.
 - Excel is suitable for prototypes but not ideal for large-scale production.
 
 ## Future Improvements
 
 - Add `/status REF001`
 - Add `/gain REF001`
-- Add `/shipment STCC+Booking`
+- Add `/shipment STCC + Booking`
 - Add open delay lookup
 - Move backend from Excel to SharePoint List or Dataverse
 - Add role-based access control
